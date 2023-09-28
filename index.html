@@ -51,34 +51,29 @@ function calcularFibonacci(n) {
                                         Calcular Fibonacci </button></a>
                             </div>
                             <div id="resultado"></div>
-                            <div class="col-md-15 text-center">
-                                <a href="Fibonacci.pas" download="Fibonacci.pas">
-                                    <button type="button" class="btn btn-outline-info btn-sm">Descargar
-                                        Fibonacci.pas</button>
-                                </a>
-
-                                <!--<a _ngcontent-paa-c7="" href="Fibonacci.exe" download="Fibonacci.exe">
-                                    <button _ngcontent-paa-c7="" type="button" class="btn btn-outline-info btn-sm">
-                                        Descargar programa (pascal) </button></a>-->
-
-                            </div>
-
-                            <script>
-                                document.getElementById("calcularBtn").addEventListener("click", function () {
-                                    var numero = document.getElementById("miNumero").value;
-                                    var resultado = calcularFibonacci(numero);
-                                    document.getElementById("resultado").textContent = "Fibonacci de " + numero + ": " + resultado;
-                                });
-                                function calcularFibonacci(n) {
-                                    if (n < 2) {
-                                        return n;
-                                    } else {
-                                        return calcularFibonacci(n - 1) + calcularFibonacci(n - 2);
-                                    }
-                                }
-                            </script>
-                            <br>
                         </div>
+                        <div class="col-md-15 text-center">
+                            <a href="Fibonacci.pas" download="Fibonacci.pas">
+                                <button type="button" class="btn btn-outline-info btn-sm">Descargar
+                                    Fibonacci.pas</button>
+                            </a>
+                        </div>
+
+                        <script>
+                            document.getElementById("calcularBtn").addEventListener("click", function () {
+                                var numero = document.getElementById("miNumero").value;
+                                var resultado = calcularFibonacci(numero);
+                                document.getElementById("resultado").textContent = "Fibonacci de " + numero + ": " + resultado;
+                            });
+                            function calcularFibonacci(n) {
+                                if (n < 2) {
+                                    return n;
+                                } else {
+                                    return calcularFibonacci(n - 1) + calcularFibonacci(n - 2);
+                                }
+                            }
+                        </script>
+                        <br>
                     </div>
                 </div>
         </section>
