@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="icon" type="image/png" href="imagenes/iconoWeb.png">
+    <title>Fibonacci-JS</title>
+
+    <!-- importamos el archivo .css-->
+    <link href="index.css" rel="stylesheet" type="text/css">
+
+    <!-- importamos los links necesarios para utilizar bootstrap-->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous">
+        </script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+</head>
+
+<body id="page-top">
+    <div id="fondo">
+        <section class="py-5">
+            <div class="container">
+                <div class="col-lg-11 mx-auto" id="borde">
+                    <!-- proyecto codigo Pascal -->
+                    <h2 class="font-italic ml-2" id="fuenteTitulos" key="tituloSeccion2">Demostración de código
+                        JavaScript.</h2>
+                    <div id="proyecto" class="col-xs-12 col-sm-12 col-md-11 col-lg-10">
+                        <div>
+                            <h5>
+                                Programa que resuelve serie de Fibonacci de un número N de forma recursiva:
+                            </h5>
+                            <pre class="lead text-left">
+function calcularFibonacci(n) {
+    if (n < 2) {
+        return n;
+    } else {
+        return calcularFibonacci(n - 1) + calcularFibonacci(n - 2);
+    }
+}</pre>
+                            <div class="col-md-15 text-left">
+                                <input _ngcontent-paa-c7="" type="number" id="miNumero" name="miNumero">
+
+                                <a _ngcontent-paa-c7="" target="_blank" id="botonProyecto">
+                                    <button _ngcontent-paa-c7="" id="calcularBtn" onclick="calcularFibonacci()"
+                                        type="button" class="btn btn-outline-info btn-sm">
+                                        Calcular Fibonacci </button></a>
+                            </div>
+                            <div id="resultado"></div>
+                            <div class="col-md-15 text-center">
+                                <a href="Fibonacci.pas" download="Fibonacci.pas">
+                                    <button type="button" class="btn btn-outline-info btn-sm">Descargar
+                                        Fibonacci.pas</button>
+                                </a>
+
+                                <!--<a _ngcontent-paa-c7="" href="Fibonacci.exe" download="Fibonacci.exe">
+                                    <button _ngcontent-paa-c7="" type="button" class="btn btn-outline-info btn-sm">
+                                        Descargar programa (pascal) </button></a>-->
+
+                            </div>
+
+                            <script>
+                                document.getElementById("calcularBtn").addEventListener("click", function () {
+                                    var numero = document.getElementById("miNumero").value;
+                                    var resultado = calcularFibonacci(numero);
+                                    document.getElementById("resultado").textContent = "Fibonacci de " + numero + ": " + resultado;
+                                });
+                                function calcularFibonacci(n) {
+                                    if (n < 2) {
+                                        return n;
+                                    } else {
+                                        return calcularFibonacci(n - 1) + calcularFibonacci(n - 2);
+                                    }
+                                }
+                            </script>
+                            <br>
+                        </div>
+                    </div>
+                </div>
+        </section>
+
+        <footer class="py-5 footer">
+            <div class="container">
+                <p class="m-0 text-center text-white"> <em>Copyright LUCAS LATESSA - ©2023. Todos los derechos
+                        reservados.</em> </p>
+            </div>
+        </footer>
+
+
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+            integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous">
+            </script>
+    </div>
+
+    <!-- importamos la libreria para los efectos de movimiento-->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+
+
+</body>
+
+</html>
