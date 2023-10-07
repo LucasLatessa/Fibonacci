@@ -1,0 +1,50 @@
+#fondo {
+  background-color: #292b2b;
+  color: white;
+}
+
+#fuenteTitulos {
+  font-family: Lora;
+  font-weight: bold;
+  color: #1e6ce2;
+  font-size: 35px;
+}
+
+#borde {
+  border-left: 2px #1e6ce2 solid;
+  border-radius: 10px;
+}
+
+#proyecto {
+  width: 1000px;
+  background-color: red;
+  margin: 10px;
+  padding: 20px;
+  background-color: red;
+  border-radius: 10px;
+  background-color: #2e3030;
+}
+
+#proyecto h5 {
+  text-align: center;
+}
+
+#proyecto pre {
+  text-align: justify;
+  font-size: 15px;
+  color: #fff;
+}
+
+.btn {
+  margin: 10px;
+}
+
+.parent {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  background-color: black;
+}
