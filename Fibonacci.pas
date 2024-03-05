@@ -19,4 +19,4 @@ begin
             writeln('Fibonacci de '+scanner+'= '+IntToStr(RecursivaFibo(strtoint(scanner))));
     end;
     writeln('Adios! Gracias por usar este programa de Lucas');
-end.
+end. 
